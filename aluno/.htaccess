@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    RewriteEngine On
+
+    RewriteRule ^dash-aluno/([0-9]+)/?$                                         dashAluno.php?t=0&pag=$1 [NC]
+    RewriteRule ^selecionados/?$                                                            relacao.php [NC]
+    RewriteRule ^vercurso/([0-9]+)/?$                                             vermais.php?t=0&id=$1 [NC]
+    RewriteRule ^resultado/?$                                                             resultado.php [NC]
+    
+    
+
+</IfModule>

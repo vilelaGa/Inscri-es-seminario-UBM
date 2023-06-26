@@ -1,0 +1,9 @@
+Options -Indexes
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    RewriteEngine On
+
+    RewriteRule ^home/?$ index.php [NC]
+    RewriteRule ^login/?$ LoginCadastro.php [NC]
+
+</IfModule>
